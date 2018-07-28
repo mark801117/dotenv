@@ -27,7 +27,7 @@ project
 │───public_html     入口文件目錄
 |   |   index.php   入口檔案
 |   
-|───vendo
+|───vendor
 |
 ```
  
