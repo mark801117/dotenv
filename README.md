@@ -33,7 +33,7 @@ project
  
 根據設定的環境`production`, `development`, `testing` 來讀取對應env檔案, 以下是讀取`.env`的範例:
 
-    $dotenv=new Dotenv\EnviromentLoader(__DIR__."/../", Dotenv\EnviromentLoader::production);
+    $dotenv=new Dotenv\EnvironmentLoader(__DIR__."/../", Dotenv\EnvironmentLoader::production);
     $dotenv->load();
     
     $db = [
