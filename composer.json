@@ -1,0 +1,23 @@
+{
+    "name": "cloud/dotenv",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Cloud",
+            "email": "mark801117@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dotenv\\": "src" 
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dotenv\\Test\\": "tests"
+        }
+    },
+    "require-dev": {
+    }
+}
