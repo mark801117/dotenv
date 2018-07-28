@@ -48,6 +48,7 @@ class EnvironmentLoader
         foreach ($lines as $line) {
             if (!$this->isComment($line) && $this->looksLikeSetter($line)) {
                 list($name, $value)=$this->splitToNameValue($line);
+                $value = $this->boolaenValue($value);
                 $this->setEnv($name, $value);
             }
         }
@@ -123,6 +124,17 @@ class EnvironmentLoader
             putenv("$name=$value");    
         }
         $_ENV[$name]=$value;
+    }
+    /**
+     * convert string boolean value to real boolean value
+     * @param type $value
+     * @return type
+     */
+    private function boolaenValue($value)
+    {
+        $value = $value === "true" || $value === 'True' || $value === 'TRUE' ? true : $value; 
+        $value = $value === "false"|| $value === 'False' || $value === 'FALSE' ? false : $value;
+        return $value;
     }
     /**
      * clear env variables
