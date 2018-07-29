@@ -1,8 +1,8 @@
 <?php
 namespace Cloud\Dotenv;
 
-use Dotenv\Exception\InvalidTypeException;
-use Dotenv\Exception\InvalidFileException;
+use Cloud\Dotenv\Exception\InvalidTypeException;
+use Cloud\Dotenv\Exception\InvalidFileException;
 /**
  * Description of EnvironmentLoader
  * You can define you're Enviroment type here

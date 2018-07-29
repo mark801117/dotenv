@@ -1,9 +1,9 @@
 <?php
 namespace Cloud\Dotenv\Test;
 use PHPUnit\Framework\TestCase;
-use Dotenv\EnvironmentLoader;
-use Dotenv\Exception\InvalidFileException;
-use Dotenv\Exception\InvalidTypeException;
+use Cloud\Dotenv\EnvironmentLoader;
+use Cloud\Dotenv\Exception\InvalidFileException;
+use Cloud\Dotenv\Exception\InvalidTypeException;
 /**
  * Description of EnvironmentLoaderTest
  *
@@ -19,7 +19,7 @@ class EnvironmentLoaderTest extends TestCase
     }
     public function testLoad()
     {        
-        $dotenv=new \Dotenv\EnvironmentLoader(__DIR__, EnvironmentLoader::production);
+        $dotenv=new EnvironmentLoader(__DIR__, EnvironmentLoader::production);
         $dotenv->load();
         $this->assertEquals("/adm", getenv('ADMIN_DIR'));
         $this->assertEquals(true, getenv('TRUE_TEST'));
