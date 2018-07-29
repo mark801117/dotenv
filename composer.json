@@ -10,12 +10,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Dotenv\\": "src" 
+            "Cloud\\Dotenv\\": "src" 
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Dotenv\\Test\\": "tests"
+            "Cloud\\Dotenv\\Test\\": "tests"
         }
     },
     "require-dev": {

@@ -1,5 +1,5 @@
 <?php
-namespace Dotenv;
+namespace Cloud\Dotenv;
 
 use Dotenv\Exception\InvalidTypeException;
 use Dotenv\Exception\InvalidFileException;

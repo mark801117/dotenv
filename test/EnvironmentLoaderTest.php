@@ -1,5 +1,5 @@
 <?php
-namespace Dotenv\Test;
+namespace Cloud\Dotenv\Test;
 use PHPUnit\Framework\TestCase;
 use Dotenv\EnvironmentLoader;
 use Dotenv\Exception\InvalidFileException;

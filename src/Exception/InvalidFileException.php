@@ -1,5 +1,5 @@
 <?php
-namespace Dotenv\Exception;
+namespace Cloud\Dotenv\Exception;
 use Exception;
 /**
  * Description of InvalidFileException
